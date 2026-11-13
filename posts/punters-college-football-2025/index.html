@@ -9,7 +9,7 @@
 <meta name="author" content="Jack Grigsby">
 <meta name="dcterms.date" content="2026-11-13">
 
-<title>Punters are people too – Jack's Punter Blog</title>
+<title>Does punting make a difference in college football? – Jack Grigsby</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,6 +27,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -46,14 +81,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-866e571074e1b809f4aa03c88c9b6319.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-dark-68ffe45e66e65aaa3f585b3b079f1ead.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-866e571074e1b809f4aa03c88c9b6319.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-8a6c6d3613ab290d596ef53e5f3d5925.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -86,177 +117,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455).
-    // Not run on load: stylesheets are set before first paint there, and
-    // scrolling would undo the scroll to a URL fragment (#14973).
-    // The one pixel nudge keeps the reader where they were.
-    const refreshSafariScrollbar = () => {
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        const scrollY = window.scrollY;
-        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
-        setTimeout(() => {
-          window.scrollTo(0, scrollY);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      refreshSafariScrollbar();
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -264,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Jack’s Punter Blog</span>
+    <span class="navbar-title">Jack Grigsby</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -284,7 +145,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
 </div>
             <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
@@ -294,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Punters are people too</h1>
+      <h1 class="title">Does punting make a difference in college football?</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">collegefootball</div>
               </div>
@@ -333,62 +193,2048 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="having-a-good-punter-doesnt-help-your-favorite-team-win" class="level3">
+<h3 class="anchored" data-anchor-id="having-a-good-punter-doesnt-help-your-favorite-team-win">Having a good punter doesn’t help your favorite team win</h3>
+<p>Let me paint a picture for you. You’re a Nebraska football fan, and It’s rivalry week in college football. The Huskers are beating Iowa, 16-14, with less than two minutes remaining in the game.</p>
+<p>However, it’s 4th-and-20 on your own 40-yard line, and Nebraska turns to its punter. Sophomore punter Archie Wilson boots it 55 yards to Iowa’s 5-yard line. He’s had three 50-plus-yard punts in the game, all landing beneath the Hawkeyes’ 20-yard line. Most people would say this would help the Huskers win because of yards per punt and field position. But would it really help the Nebraska win?</p>
+<p>Let’s go back 14 years.</p>
+<p>On Friday, Apr.&nbsp;27, 2012, the Jacksonville Jaguars selected punter Bryan Anger with the 70th pick in the NFL draft. After Anger’s name was called, a graphic flashed on the screen, showing his collegiate punting metrics. Anger had 255 punts in college, 90 of which landed beneath the 20-yard line. American sports commentator Rich Eisen yelled, “We’ve got a punter! Let me tell you something, people: punters are people, too!”</p>
+<p>But are they really? Do punters actually help your favorite team win in college football?</p>
+<p>Unfortunately for Eisen, Anger and punters everywhere, the answer is not really. Good punting doesn’t help you win.</p>
+<p>To see whether punters actually help you win in college football, we need to determine what makes a good punter. When most people judge a punter, they look at two things: total yards per punt and whether the ball lands inside the 20-yard line, because that’s better than a touchback and pins the opposing offense deep in its own territory.</p>
+<p>Does having someone who punts longer lead to wins?</p>
+<p>Let’s first look at a scatterplot that measures total yards per punt (x-axis) and total wins (y-axis).</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(cfbfastR)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(gt)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(ggrepel)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  games <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/footballlogs25.csv"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  win_percent <span class="ot">&lt;-</span> games <span class="sc">|&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(team) <span class="sc">|&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">games =</span> <span class="fu">n</span>(),</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">wins =</span> <span class="fu">sum</span>(rslt <span class="sc">==</span> <span class="st">"W"</span>),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">win_percent =</span> <span class="fu">round</span>(<span class="fu">mean</span>(rslt <span class="sc">==</span> <span class="st">"W"</span>) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  punts <span class="ot">&lt;-</span> <span class="fu">load_cfb_pbp</span>(<span class="dv">2025</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(punt <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  punt_avg_length <span class="ot">&lt;-</span> punts <span class="sc">|&gt;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(yds_punted <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(pos_team) <span class="sc">|&gt;</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>      <span class="at">average =</span> <span class="fu">mean</span>(yds_punted)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  plot_data_avg_length <span class="ot">&lt;-</span> win_percent <span class="sc">|&gt;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">inner_join</span>(</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>      punt_avg_length,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>      <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"team"</span> <span class="ot">=</span> <span class="st">"pos_team"</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  highest_wins <span class="ot">&lt;-</span> plot_data_avg_length <span class="sc">|&gt;</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(wins <span class="sc">==</span> <span class="fu">max</span>(wins))</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  longest_avg_punt <span class="ot">&lt;-</span> plot_data_avg_length <span class="sc">|&gt;</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(average <span class="sc">==</span> <span class="fu">max</span>(average))</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">data=</span>plot_data_avg_length, <span class="fu">aes</span>(<span class="at">x =</span> average, <span class="at">y =</span> wins)) <span class="sc">+</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="at">data=</span>plot_data_avg_length, <span class="fu">aes</span>(<span class="at">x =</span> average, <span class="at">y =</span> wins), <span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">data =</span> highest_wins, <span class="fu">aes</span>(<span class="at">x =</span> average, <span class="at">y =</span> wins), <span class="at">color =</span> <span class="st">"darkred"</span>) <span class="sc">+</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_text_repel</span>(<span class="at">data =</span> highest_wins, <span class="fu">aes</span>(<span class="at">x =</span> average, <span class="at">y =</span> wins, <span class="at">label =</span> team), <span class="at">color =</span> <span class="st">"darkred"</span>) <span class="sc">+</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">data =</span> longest_avg_punt, <span class="fu">aes</span>(<span class="at">x =</span> average, <span class="at">y =</span> wins), <span class="at">color =</span> <span class="st">"darkgreen"</span>) <span class="sc">+</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_text_repel</span>(<span class="at">data =</span> longest_avg_punt, <span class="fu">aes</span>(<span class="at">x =</span> average, <span class="at">y =</span> wins, <span class="at">label =</span> team), <span class="at">color =</span> <span class="st">"darkgreen"</span>) <span class="sc">+</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span> <span class="st">"Long punts don't win games"</span>, </span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>      <span class="at">subtitle =</span> <span class="st">"2025 college football season"</span>,  <span class="at">x =</span> <span class="st">"Average punt length"</span>, <span class="at">y =</span> <span class="st">"Number of wins"</span>,</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>      <span class="at">caption=</span><span class="st">"Source: CFBfastR | By Jack Grigsby"</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span> </span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>), </span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>), </span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>      <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title.position =</span> <span class="st">"plot"</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Michigan State had the best punter in terms of average punt length. Spartans junior Ryan Eckley punted the ball 51.32 yards per punt. However, Michigan State only had four wins in 2025. This plot shows that having a punter who punts far is actually more likely to be on a worse team.</p>
+<p>A punter with a strong leg isn’t everything, though. If they kicked it into the end zone every time, the opposing offense would get the ball at the 20. Positioning matters just as much as total yards per punt. Pinning the opposing team deep helps defenses because the offense has less room to work with.</p>
+<p>But does it actually help your team win? The data suggests it helps more than total yards per punt, but not as much as a more important metric, such as a running back who averages a high number of rushing yards per game.</p>
+<p>Let’s take a look at whether punts that land beneath the 20-yard line lead to wins.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>    punt_percentages <span class="ot">&lt;-</span> punts <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(pos_team) <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">total_punts =</span> <span class="fu">n</span>(),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">inside_20 =</span> <span class="fu">sum</span>(yards_to_goal_end <span class="sc">&gt;</span> <span class="dv">80</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">percent_inside_20 =</span> <span class="fu">round</span>(inside_20 <span class="sc">/</span> total_punts <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    ) </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    plot_data_inside_20 <span class="ot">&lt;-</span> win_percent <span class="sc">|&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">inner_join</span>(</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>      punt_percentages,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"team"</span> <span class="ot">=</span> <span class="st">"pos_team"</span>)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    highest_wins <span class="ot">&lt;-</span> plot_data_inside_20 <span class="sc">|&gt;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(wins <span class="sc">==</span> <span class="fu">max</span>(wins))</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    highest_percent_inside_20_tn <span class="ot">&lt;-</span> plot_data_inside_20 <span class="sc">|&gt;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(percent_inside_20 <span class="sc">==</span> <span class="fu">max</span>(percent_inside_20)) <span class="sc">|&gt;</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(team <span class="sc">==</span> <span class="st">"Tennessee"</span>)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    highest_percent_inside_20_fl <span class="ot">&lt;-</span> plot_data_inside_20 <span class="sc">|&gt;</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(percent_inside_20 <span class="sc">==</span> <span class="fu">max</span>(percent_inside_20)) <span class="sc">|&gt;</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(team <span class="sc">==</span> <span class="st">"Florida State"</span>)</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_point</span>(<span class="at">data=</span>plot_data_inside_20, <span class="fu">aes</span>(<span class="at">x =</span> percent_inside_20, <span class="at">y =</span> wins)) <span class="sc">+</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_smooth</span>(<span class="at">data=</span>plot_data_inside_20, <span class="fu">aes</span>(<span class="at">x =</span> percent_inside_20, <span class="at">y =</span> wins), <span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_point</span>(<span class="at">data =</span> highest_wins, <span class="fu">aes</span>(<span class="at">x =</span> percent_inside_20, <span class="at">y =</span> wins), <span class="at">color =</span> <span class="st">"darkred"</span>) <span class="sc">+</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_text_repel</span>(<span class="at">data =</span> highest_wins, <span class="fu">aes</span>(<span class="at">x =</span> percent_inside_20, <span class="at">y =</span> wins, <span class="at">label =</span> team), <span class="at">color =</span> <span class="st">"darkred"</span>) <span class="sc">+</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_point</span>(<span class="at">data =</span> highest_percent_inside_20_tn, <span class="fu">aes</span>(<span class="at">x =</span> percent_inside_20, <span class="at">y =</span> wins), <span class="at">color =</span> <span class="st">"orange"</span>) <span class="sc">+</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_text_repel</span>(<span class="at">data =</span> highest_percent_inside_20_tn, <span class="fu">aes</span>(<span class="at">x =</span> percent_inside_20, <span class="at">y =</span> wins, <span class="at">label =</span> team), <span class="at">color =</span> <span class="st">"orange"</span>) <span class="sc">+</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_point</span>(<span class="at">data =</span> highest_percent_inside_20_fl, <span class="fu">aes</span>(<span class="at">x =</span> percent_inside_20, <span class="at">y =</span> wins), <span class="at">color =</span> <span class="st">"gold"</span>) <span class="sc">+</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_text_repel</span>(<span class="at">data =</span> highest_percent_inside_20_fl, <span class="fu">aes</span>(<span class="at">x =</span> percent_inside_20, <span class="at">y =</span> wins, <span class="at">label =</span> team), <span class="at">color =</span> <span class="st">"gold"</span>) <span class="sc">+</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>        <span class="fu">labs</span>( </span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="st">"Punts inside the 20 don't help much"</span>, </span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>        <span class="at">subtitle =</span> <span class="st">"2025 college football season"</span>,  <span class="at">x =</span> <span class="st">"Percentage of punts inside the 20"</span>, <span class="at">y =</span> <span class="st">"Number of wins"</span>,</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>        <span class="at">caption=</span><span class="st">"Source: CFBfastR | By Jack Grigsby"</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">+</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>), </span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>), </span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>      <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title.position =</span> <span class="st">"plot"</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Okay, there’s a slight positive correlation between positioning and wins, but is it as significant as a more important offensive metric, like average rushing yards per game?</p>
+<p>No, not even close. Let’s see the difference.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  wins_and_rushing <span class="ot">&lt;-</span> games <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(team) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">wins =</span> <span class="fu">sum</span>(rslt <span class="sc">==</span> <span class="st">"W"</span>),</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">average_yards_per_game =</span> <span class="fu">round</span>(<span class="fu">mean</span>(rushing_yds), <span class="dv">1</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  highest_wins <span class="ot">&lt;-</span> wins_and_rushing <span class="sc">|&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(wins <span class="sc">==</span> <span class="fu">max</span>(wins))</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  highest_rushing_yards <span class="ot">&lt;-</span> wins_and_rushing <span class="sc">|&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(average_yards_per_game <span class="sc">==</span> <span class="fu">max</span>(average_yards_per_game))</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">data=</span>wins_and_rushing, <span class="fu">aes</span>(<span class="at">x =</span> average_yards_per_game, <span class="at">y =</span> wins)) <span class="sc">+</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="at">data=</span>wins_and_rushing, <span class="fu">aes</span>(<span class="at">x =</span> average_yards_per_game, <span class="at">y =</span> wins), <span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span>      </span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">data =</span> highest_wins, <span class="fu">aes</span>(<span class="at">x =</span> average_yards_per_game, <span class="at">y =</span> wins), <span class="at">color =</span> <span class="st">"darkred"</span>) <span class="sc">+</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_text_repel</span>(<span class="at">data =</span> highest_wins, <span class="fu">aes</span>(<span class="at">x =</span> average_yards_per_game, <span class="at">y =</span> wins, <span class="at">label =</span> team), <span class="at">color =</span> <span class="st">"darkred"</span>) <span class="sc">+</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">data =</span> highest_rushing_yards, <span class="fu">aes</span>(<span class="at">x =</span> average_yards_per_game, <span class="at">y =</span> wins), <span class="at">color =</span> <span class="st">"darkblue"</span>) <span class="sc">+</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_text_repel</span>(<span class="at">data =</span> highest_rushing_yards, <span class="fu">aes</span>(<span class="at">x =</span> average_yards_per_game, <span class="at">y =</span> wins, <span class="at">label =</span> team), <span class="at">color =</span> <span class="st">"darkblue"</span>) <span class="sc">+</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Rushing yards win games"</span>, </span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>      <span class="at">subtitle =</span> <span class="st">"2025 college football season"</span>,  <span class="at">x =</span> <span class="st">"Average rushing yards"</span>, <span class="at">y =</span> <span class="st">"Number of wins"</span>,</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>      <span class="at">caption=</span><span class="st">"Source: CFBfastR | By Jack Grigsby"</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span> </span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>), </span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>), </span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>      <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title.position =</span> <span class="st">"plot"</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>As you can see, there’s a significant correlation between total rushing yards per game and winning. Better rushing teams tend to win more on average. Navy, a traditional run-heavy offense, had the highest rushing yards average in 2025 (285.6 per game) and ended the season with 11 wins.</p>
+<p>Another thing that determines whether good punters lead to wins is a punter’s EPA (Expected Points Added).</p>
+<p>EPA shows how a play’s outcome will impact the game’s result. If a play has a positive EPA, it means the outcome is projected to score the team points. If Ohio State junior running back Jeremiah Smith has a 12-yard rush on a 1st-and-10, the expected points for the next play will most likely increase.</p>
+<p>It’s a matter of whether the play will increase or decrease expected points scored in a game.</p>
+<p>But how does this relate to punting?</p>
+<p>CBFfastR shows us each Big Ten punt’s EPA.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>big10_punts <span class="ot">&lt;-</span> punts <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    (</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Illinois"</span> <span class="sc">|</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Indiana"</span> <span class="sc">|</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Iowa"</span> <span class="sc">|</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Maryland"</span> <span class="sc">|</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Michigan"</span> <span class="sc">|</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Michigan State"</span> <span class="sc">|</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Minnesota"</span> <span class="sc">|</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Nebraska"</span> <span class="sc">|</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Northwestern"</span> <span class="sc">|</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Ohio State"</span> <span class="sc">|</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Oregon"</span> <span class="sc">|</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Penn State"</span> <span class="sc">|</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Purdue"</span> <span class="sc">|</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Rutgers"</span> <span class="sc">|</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"UCLA"</span> <span class="sc">|</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"USC"</span> <span class="sc">|</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Washington"</span> <span class="sc">|</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>      pos_team <span class="sc">==</span> <span class="st">"Wisconsin"</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    ) </span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  )  </span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  big10_punt_epa <span class="ot">&lt;-</span> big10_punts <span class="sc">|&gt;</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(pos_team) <span class="sc">|&gt;</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_punts =</span> <span class="fu">n</span>(),</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">average_punt_epa =</span> <span class="fu">round</span>(<span class="fu">mean</span>(EPA), <span class="dv">3</span>)</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>  rutgers_punt_epa <span class="ot">&lt;-</span> big10_punt_epa <span class="sc">|&gt;</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(pos_team <span class="sc">==</span> <span class="st">"Rutgers"</span>)</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  purdue_punt_epa <span class="ot">&lt;-</span> big10_punt_epa <span class="sc">|&gt;</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(pos_team <span class="sc">==</span> <span class="st">"Purdue"</span>)</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">data=</span>big10_punt_epa, <span class="fu">aes</span>(<span class="at">x =</span> pos_team, <span class="at">weight =</span> average_punt_epa), <span class="at">fill=</span><span class="st">"lightgrey"</span>) <span class="sc">+</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">data=</span>rutgers_punt_epa, <span class="fu">aes</span>(<span class="at">x =</span> pos_team, <span class="at">weight =</span> average_punt_epa), <span class="at">fill=</span><span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">data=</span>purdue_punt_epa, <span class="fu">aes</span>(<span class="at">x =</span> pos_team, <span class="at">weight =</span> average_punt_epa), <span class="at">fill=</span><span class="st">"gold"</span>) <span class="sc">+</span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">coord_flip</span>() <span class="sc">+</span> </span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>( </span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span> <span class="st">"Only two Big Ten teams have a positive punting EPA"</span>, </span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>      <span class="at">subtitle =</span> <span class="st">"2025 college football season"</span>,  <span class="at">x =</span> <span class="st">"Team"</span>, <span class="at">y =</span> <span class="st">"EPA"</span>,</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>      <span class="at">caption=</span><span class="st">"Source: CFBfastR | By Jack Grigsby"</span></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>), </span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>), </span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>      <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title.position =</span> <span class="st">"plot"</span></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Out of all 18 Big Ten teams, only Purdue and Rutgers had a positive punting EPA, and both were below 0.5.</p>
+<p>But how does punting EPA look across the rest of the conferences?</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>  all_team_epas <span class="ot">&lt;-</span> punts <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(pos_team) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">average_punt_epa =</span> <span class="fu">round</span>(<span class="fu">mean</span>(EPA), <span class="dv">2</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(average_punt_epa)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  all_team_epas <span class="sc">|&gt;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cols_label</span>(</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">pos_team =</span> <span class="st">"School"</span>,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">average_punt_epa =</span> <span class="st">"Average Punt EPA"</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_header</span>(</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span> <span class="st">"Average punting EPA from worst to best"</span>,</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">subtitle =</span> <span class="st">"2025 college football season"</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_style</span>(</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>      <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"center"</span>, <span class="at">size =</span> <span class="st">"25"</span>),</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"title"</span>)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_style</span>(</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>      <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"center"</span>, <span class="at">size =</span> <span class="st">"15"</span>),</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>      <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"subtitle"</span>)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_style</span>(</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>      <span class="at">style =</span> <span class="fu">list</span>(</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"darkgreen"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>)</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>      <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>        <span class="at">columns =</span> average_punt_epa,</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>        <span class="at">rows =</span> average_punt_epa <span class="sc">&gt;</span> <span class="dv">0</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_style</span>(</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>      <span class="at">style =</span> <span class="fu">list</span>(</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"darkred"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>)</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>      <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>        <span class="at">columns =</span> average_punt_epa,</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>        <span class="at">rows =</span> average_punt_epa <span class="sc">&lt;</span> <span class="dv">0</span></span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_source_note</span>(<span class="at">source_note =</span> <span class="st">"By Jack Grigsby"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_source_note</span>(<span class="at">source_note =</span> <span class="st">"CFBfastR"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="ahnlueesha" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ahnlueesha table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-<p>This is why punters matter in college football!</p>
+#ahnlueesha thead, #ahnlueesha tbody, #ahnlueesha tfoot, #ahnlueesha tr, #ahnlueesha td, #ahnlueesha th {
+  border-style: none;
+}
+
+#ahnlueesha p {
+  margin: 0;
+  padding: 0;
+}
+
+#ahnlueesha .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ahnlueesha .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#ahnlueesha .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ahnlueesha .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ahnlueesha .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ahnlueesha .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ahnlueesha .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ahnlueesha .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ahnlueesha .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ahnlueesha .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ahnlueesha .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ahnlueesha .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ahnlueesha .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#ahnlueesha .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#ahnlueesha .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ahnlueesha .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ahnlueesha .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ahnlueesha .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ahnlueesha .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ahnlueesha .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#ahnlueesha .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#ahnlueesha .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#ahnlueesha .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ahnlueesha .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#ahnlueesha .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#ahnlueesha .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ahnlueesha .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ahnlueesha .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ahnlueesha .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ahnlueesha .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ahnlueesha .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ahnlueesha .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ahnlueesha .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ahnlueesha .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ahnlueesha .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ahnlueesha .gt_left {
+  text-align: left;
+}
+
+#ahnlueesha .gt_center {
+  text-align: center;
+}
+
+#ahnlueesha .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ahnlueesha .gt_font_normal {
+  font-weight: normal;
+}
+
+#ahnlueesha .gt_font_bold {
+  font-weight: bold;
+}
+
+#ahnlueesha .gt_font_italic {
+  font-style: italic;
+}
+
+#ahnlueesha .gt_super {
+  font-size: 65%;
+}
+
+#ahnlueesha .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#ahnlueesha .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#ahnlueesha .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#ahnlueesha .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#ahnlueesha .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#ahnlueesha .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#ahnlueesha .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#ahnlueesha .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#ahnlueesha div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<td colspan="2" class="gt_heading gt_title gt_font_normal" style="text-align: center; color: #000000; font-size: 25; font-weight: bold;">Average punting EPA from worst to best</td>
+</tr>
+<tr class="gt_heading even">
+<td colspan="2" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="text-align: center; color: #000000; font-size: 15; font-weight: bold;">2025 college football season</td>
+</tr>
+<tr class="gt_col_headings header">
+<th id="pos_team" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">School</th>
+<th id="average_punt_epa" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Average Punt EPA</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Morehouse College</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-4.38</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Warner University</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.86</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Kentucky Christian</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.35</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Adrian</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.34</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Southern</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.33</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Central State (OH)</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.23</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Lane College</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.21</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Cumberland (TN)</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.20</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Jackson State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.16</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Bentley</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.14</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Alcorn State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.06</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Lincoln (PA)</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.06</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Savannah St</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-1.03</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Dartmouth</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.98</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Lafayette</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.92</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">American International</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.91</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Duquesne</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.87</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Virginia University Of Lynchburg</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.82</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Air Force</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.80</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Liberty</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.78</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">BLUEFIELD</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.77</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Morgan State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.75</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Grambling</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.74</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Wake Forest</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.74</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">James Madison</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.73</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Colgate</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.72</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Prairie View A&amp;M</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.72</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Greensboro College</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.71</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Arkansas-Pine Bluff</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.69</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Campbell</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.69</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Norfolk State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.68</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Bowie State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.67</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Sacred Heart</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.66</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Nicholls</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.65</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Pennsylvania</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.64</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Portland State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.64</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">East Texas A&amp;M</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.61</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Mississippi Valley State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.61</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Ohio</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.61</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Bowling Green</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.60</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Davidson</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.60</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Maine</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.60</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Missouri State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.60</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Abilene Christian</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.59</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Alabama State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.59</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Arizona State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.59</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Yale</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.59</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Texas Southern</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.58</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Navy</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.57</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">San Diego</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.57</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Virginia</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.57</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">South Carolina State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.56</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Central Connecticut</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.55</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Drake</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.55</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Howard</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.55</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">South Alabama</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.55</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Arkansas</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.54</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Fayetteville State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.54</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Georgetown</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.54</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Marist</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.54</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Pace</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.54</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Presbyterian</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.54</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">San José State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.54</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Southern Miss</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.54</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Butler</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.53</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Harvard</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.53</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Rhode Island</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.53</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">West Georgia</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.53</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">ERSKINE</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.52</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Old Dominion</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.52</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">St. Francis (PA)</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.51</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Lehigh</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.49</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Hampton</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.48</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Tennessee Tech</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.48</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Incarnate Word</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.47</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Tarleton State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.47</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Eastern Kentucky</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.46</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Oregon State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.46</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Villanova</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.46</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Alabama A&amp;M</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.45</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Cornell</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.45</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Hanover College</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.45</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Maryland</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.45</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">North Dakota State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.45</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">UAB</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.45</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Chattanooga</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.44</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Eastern Michigan</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.44</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Ferrum</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.44</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Kennesaw State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.44</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Montana State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.44</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">North Carolina Central</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.44</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Saginaw Valley State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.44</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">New Hampshire</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.43</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">North Carolina</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.43</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">USC</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.43</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Austin Peay</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.42</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Central Michigan</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.42</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Furman</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.42</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Holy Cross</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.42</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Michigan</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.42</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Toledo</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.41</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Valparaiso</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.41</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Florida A&amp;M</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.40</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Lindenwood</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.40</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Central Arkansas</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.39</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Delaware State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.39</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Houston Christian</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.39</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">McKendree</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.39</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">SMU</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.39</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Southern Illinois</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.39</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Stonehill</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.39</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Wisconsin</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.39</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Dayton</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.38</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Delaware</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.38</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Hawai'i</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.38</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Upper Iowa University</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.38</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Charleston Southern</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.37</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Illinois</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.37</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Michigan State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.37</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Northern Colorado</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.37</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Stanford</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.37</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Morehead State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.36</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Stetson</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.36</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Brown</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.35</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Edward Waters</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.35</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">LSU</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.35</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Stony Brook</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.35</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Wyoming</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.35</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">East Tennessee State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.34</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Eastern Illinois</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.34</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Fordham</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.34</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Northwestern State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.34</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">South Dakota</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.34</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">UT Martin</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.34</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Western Illinois</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.34</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Louisiana</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.33</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Buffalo</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.32</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Idaho</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.32</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Northern Arizona</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.32</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">South Carolina</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.32</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Miles College</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.31</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Monmouth</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.31</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Richmond</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.31</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">William &amp; Mary</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.31</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Indiana</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.30</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Montana</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.30</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">New Haven</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.30</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Southern Utah</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.30</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Boise State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.29</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Minnesota</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.29</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Western Michigan</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.29</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Boston College</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.28</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Fresno State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.28</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Langston University</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.28</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">North Texas</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.28</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Northern Illinois</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.28</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Oklahoma</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.28</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">SE Louisiana</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.28</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Tulane</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.28</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Houston</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.27</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Kansas State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.27</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Louisville</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.27</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Miami</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.27</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Cal Poly</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.26</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">California</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.26</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Elon</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.26</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Jacksonville State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.26</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Nebraska</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.26</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">TCU</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.26</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">UL Monroe</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.26</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Washington State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.26</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">BYU</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.25</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Colorado</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.25</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Lamar</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.25</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">New Mexico State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.25</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Eastern Washington</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.24</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Georgia Southern</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.24</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Iowa</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.24</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Northwestern</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.24</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Robert Morris</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.24</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">UConn</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.24</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Utah State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.24</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Washington</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.24</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Webber International</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.24</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Allen</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.23</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Coastal Carolina</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.23</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Long Island University</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.23</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Ohio State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.23</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Southeast Missouri State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.23</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Virginia St</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.23</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Columbia</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.22</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Gardner-Webb</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.22</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Little Rock</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.22</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Mercyhurst</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.22</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">UCF</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.22</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Sacramento State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.21</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">UCLA</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.21</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">UNLV</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.21</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Wagner</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.21</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Florida International</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.20</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">South Florida</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.20</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Southern Connecticut State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.20</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Towson</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.20</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Miami (OH)</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.19</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Texas State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.19</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Illinois State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.18</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Tennessee State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.18</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">UAlbany</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.18</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Wofford</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.18</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Nevada</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.17</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Youngstown State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.17</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Army</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.16</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Bryant</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.16</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Elizabeth City State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.16</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Marshall</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.15</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">UC Davis</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.15</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">UT Rio Grande Valley</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.15</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Utah</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.15</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Weber State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.15</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Alabama</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.14</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Cincinnati</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.14</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Kent State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.14</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">East Carolina</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.13</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Northern Iowa</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.13</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Texas Tech</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.13</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Western Kentucky</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.13</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Western Oregon</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.13</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Clemson</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.12</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">North Carolina A&amp;T</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.12</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Akron</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.11</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Kansas</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.10</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Penn State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.10</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Texas</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.09</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Texas A&amp;M</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.09</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Ball State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.08</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Lincoln (CA)</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.08</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">McNeese</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.08</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Middle Tennessee</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.08</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Mississippi State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.08</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">UTSA</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.08</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Western Carolina</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.08</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Western Connecticut St</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.08</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Georgia State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.07</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">NC State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.07</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">San Diego State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.07</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">South Dakota State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.07</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Merrimack</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.06</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Virginia Tech</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.06</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Idaho State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.05</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Oregon</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.05</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Arizona</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.04</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Massachusetts</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.04</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Missouri</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.04</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">North Alabama</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.04</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Northern Michigan</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.04</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Bucknell</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.03</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Kentucky</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.03</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">North Dakota</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.03</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">West Virginia</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.03</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Arkansas State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.02</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Princeton</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #8B0000; font-weight: bold">-0.01</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Iowa State</td>
+<td class="gt_row gt_right" headers="average_punt_epa">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Ole Miss</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.01</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Pittsburgh</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.01</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Auburn</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.02</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Florida State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.03</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Indiana State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.03</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Samford</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.03</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">App State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.04</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Florida</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.04</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Sam Houston</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.04</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Utah Tech</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.04</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Georgia</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.05</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Thomas More College</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.05</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Tulsa</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.05</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Troy</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.07</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Bethune-Cookman</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.08</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Mercer</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.09</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Kentucky State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.10</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Charlotte</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.11</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Notre Dame</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.11</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">St. Thomas (MN)</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.11</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Stephen F. Austin</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.11</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Colorado State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.13</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Duke</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.13</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Tennessee</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.13</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Murray State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.14</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Purdue</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.16</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Florida Atlantic</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.17</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">UTEP</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.17</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Syracuse</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.18</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Chadron St</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.19</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Rice</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.19</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Sul Ross State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.19</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">VMI</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.21</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Temple</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.22</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Tuskegee</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.22</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Louisiana Tech</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.23</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Northeastern State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.24</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Oklahoma State</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.26</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Vanderbilt</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.26</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Georgia Tech</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.27</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Louisiana College</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.28</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Texas Wesleyan</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.31</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">The Citadel</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.31</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">New Mexico</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.32</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Memphis</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.34</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">Rutgers</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.47</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="pos_team">Baylor</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.79</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="pos_team">West Liberty</td>
+<td class="gt_row gt_right" headers="average_punt_epa" style="color: #006400; font-weight: bold">0.86</td>
+</tr>
+</tbody><tfoot>
+<tr class="gt_sourcenotes odd">
+<td colspan="2" class="gt_sourcenote">By Jack Grigsby</td>
+</tr>
+<tr class="gt_sourcenotes even">
+<td colspan="2" class="gt_sourcenote">CFBfastR</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+<p>Most teams have negative punting EPA, and the team with the best punting EPA, West Liberty, has only 0.86, so the result of a punt doesn’t even project a point gained.</p>
+<p>Although it may seem that punting helps win games in college football, that isn’t the case. No matter how well Wilson, Anger or any punter performs, they won’t really impact the game. Unfortunately for Eisen, punters aren’t people, too, in college football.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const toggle = window.document.createElement('button');
-      toggle.type = "button";
-      toggle.setAttribute("role", "switch");
-      toggle.setAttribute("aria-checked", "false");
-      toggle.classList.add('top-right');
-      toggle.classList.add('quarto-color-scheme-toggle');
-      toggle.setAttribute("aria-label", "Toggle dark mode");
-      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      toggle.appendChild(i);
-      // Put the toggle in a landmark of its own, so that landmark navigation
-      // can reach it.
-      //
-      // The container is always a fresh direct child of body, and the toggle is
-      // never moved into page furniture that the theme or the author controls.
-      // The toggle is positioned against the page, so any ancestor that
-      // establishes a containing block captures it: a positioned element or a
-      // grid for position: absolute, and transform, filter, will-change or
-      // contain for position: fixed. A direct child of body has none of these
-      // to inherit, and the shift when one appears is silent and visual.
-      //
-      // ARIA says a document should have at most one banner, and axe reports a
-      // duplicate whether or not the banners carry distinct labels. So use a
-      // header when the page has no banner yet, and a named region otherwise.
-      //
-      // A header is a banner wherever it sits, unless it is inside sectioning
-      // content, so this cannot just look at the children of body: a custom
-      // page layout wraps the title block header in a plain div. An explicit
-      // role="banner" always counts.
-      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
-      const hasBanner = Array.from(
-        window.document.querySelectorAll('header:not([role]), [role="banner"]')
-      ).some(function(el) {
-        return el.hasAttribute("role") || el.closest(sectioning) === null;
-      });
-      const container = window.document.createElement(hasBanner ? "div" : "header");
-      if (hasBanner) {
-        container.setAttribute("role", "region");
-        container.setAttribute("aria-label", "Toggle dark mode");
-      }
-      container.classList.add('quarto-color-scheme-toggle-container');
-      container.appendChild(toggle);
-      window.document.body.appendChild(container);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
